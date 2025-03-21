@@ -267,30 +267,34 @@
 
         </footer>
         <script>// scripts.js
-            const text = "I'm Abdul Basit A Web Developer";
-            const speed = 100; // Typing speed in milliseconds
-            const typewriterElement = document.getElementById("typewriter");
-            
-            function typeWriter() {
-              let i = 0;
-              function type() {
-                if (i < text.length) {
-                  typewriterElement.innerHTML += text.charAt(i);
-                  i++;
-                  setTimeout(type, speed);
-                } else {
-                  // Optional: Reset the text after typing is complete
-                  setTimeout(() => {
-                    typewriterElement.innerHTML = "";
-                    i = 0;
-                    type(); // Restart the typing effect
-                  }, 2000); // Wait 2 seconds before restarting
-                }
-              }
-              type();
-            }
-            
-            // Start the typewriter effect when the page loads
-            window.onload = typeWriter;</script>
+           const text = "I'm Abdul Basit\nA Web Developer"; // Use \n for line break
+const speed = 100; // Typing speed in milliseconds
+const typewriterElement = document.getElementById("typewriter");
+
+function typeWriter() {
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      if (text.charAt(i) === '\n') {
+        typewriterElement.innerHTML += '<br>'; // Add line break
+      } else {
+        typewriterElement.innerHTML += text.charAt(i);
+      }
+      i++;
+      setTimeout(type, speed);
+    } else {
+      // Optional: Reset the text after typing is complete
+      setTimeout(() => {
+        typewriterElement.innerHTML = "";
+        i = 0;
+        type(); // Restart the typing effect
+      }, 2000); // Wait 2 seconds before restarting
+    }
+  }
+  type();
+}
+
+// Start the typewriter effect when the page loads
+window.onload = typeWriter;</script>
     </body>
 </html>
