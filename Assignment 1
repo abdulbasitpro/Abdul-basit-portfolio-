@@ -1,0 +1,242 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPndeO+wFiAS/lEDp6yp6n1",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/abdulbasitpro/Abdul-basit-portfolio-/blob/main/Assignment%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#  Project 1: Student Management System\n",
+        "Create a program to manage a list of student names. Implement functionalities to:\n",
+        "\n",
+        "Add a new student.\n",
+        "Remove a student by name.\n",
+        "Display all students in alphabetical order.\n",
+        "Count the total number of students.\n",
+        "Note: Without using advance concept like function, if-else structure, loops, etc.\n",
+        "\n",
+        "# Project 2: List Operations Demo\n",
+        "Develop a Python script to demonstrate:\n",
+        "\n",
+        "Appending items to a list.\n",
+        "Inserting an item at a specific position.\n",
+        "Popping and removing items.\n",
+        "Sorting and reversing the list.\n",
+        "# Project 3: Shallow vs. Deep Copy Exploration\n",
+        "Create a program to illustrate the difference between shallow and deep copying of lists using examples. Display the impact of modifying one list on its copy in both cases."
+      ],
+      "metadata": {
+        "id": "W3eKIqXWx716"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "2JQHTE6-2GMU"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Project 1: Student Management System\n",
+        "Create a program to manage a list of student names. Implement functionalities to:\n",
+        "\n",
+        "Add a new student. Remove a student by name. Display all students in alphabetical order. Count the total number of students. Note: Without using advance concept like function, if-else structure, loops, etc."
+      ],
+      "metadata": {
+        "id": "pbNxwTHrzOnv"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "student_list:str =[\"ali\",\"basit\",\"moeez\"]\n",
+        "print(student_list)\n",
+        "\n",
+        "student_list.insert(0,\"muawia\")\n",
+        "print(student_list)\n",
+        "\n",
+        "student_list.remove(\"basit\")\n",
+        "print(student_list)\n",
+        "\n",
+        "student_list.sort()\n",
+        "print(student_list)\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(len(student_list))\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "A4nna8xsw8T9",
+        "outputId": "8bd3b76a-b261-445f-e5dd-5b5c28bc0b7d"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['ali', 'basit', 'moeez']\n",
+            "['muawia', 'ali', 'basit', 'moeez']\n",
+            "['muawia', 'ali', 'moeez']\n",
+            "['ali', 'moeez', 'muawia']\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Project 2: List Operations Demo\n",
+        "Develop a Python script to demonstrate:\n",
+        "\n",
+        "Appending items to a list. Inserting an item at a specific position. Popping and removing items. Sorting and reversing the list."
+      ],
+      "metadata": {
+        "id": "pZrrHLfH2Ejd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_list:list = [1,2,3,4,5,6,7,8,9]\n",
+        "print(my_list)\n",
+        "\n",
+        "my_list.append(10)\n",
+        "print(\"after append :\", my_list)\n",
+        "\n",
+        "my_list.insert(10,11)\n",
+        "print(\"after insert:\",my_list)\n",
+        "\n",
+        "my_list.pop()\n",
+        "print(\"after pop:\",my_list)\n",
+        "\n",
+        "my_list.remove(10)\n",
+        "print(\"After Removing\",my_list)\n",
+        "\n",
+        "my_list.sort()\n",
+        "print(\"After Sorting\",my_list)\n",
+        "\n",
+        "my_list.reverse()\n",
+        "print(\"After Reversing\",my_list)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F_Sv_TXH2ky9",
+        "outputId": "4459f620-5219-431d-95be-8848f7252ad8"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+            "after append : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+            "after insert: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]\n",
+            "after pop: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+            "After Removing [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+            "After Sorting [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+            "After Reversing [9, 8, 7, 6, 5, 4, 3, 2, 1]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Project 3: Shallow vs. Deep Copy Exploration\n",
+        "Create a program to illustrate the difference between shallow and deep copying of lists using examples. Display the impact of modifying one list on its copy in both cases."
+      ],
+      "metadata": {
+        "id": "b4L5kuvD6DGj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# shallow copy\n",
+        "original_list:list =[1,2,3,4,5,6,]\n",
+        "new_list = original_list\n",
+        "print(new_list)\n",
+        "print(original_list)\n",
+        "\n",
+        "original_list.append(7)\n",
+        "print(new_list)\n",
+        "print(original_list)\n",
+        "\n",
+        "\n",
+        "\n",
+        "# Deep copy\n",
+        "original_list:list =[1,2,3,4,5,6,]\n",
+        "new_list =original_list.copy()\n",
+        "print(new_list)\n",
+        "print(original_list)\n",
+        "\n",
+        "original_list.append(7)\n",
+        "print(new_list)\n",
+        "print(original_list)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "A1Q7YcQY6Loy",
+        "outputId": "46b2179f-fad4-4442-9cca-ef1495a0c6ec"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5, 6]\n",
+            "[1, 2, 3, 4, 5, 6]\n",
+            "[1, 2, 3, 4, 5, 6, 7]\n",
+            "[1, 2, 3, 4, 5, 6, 7]\n",
+            "[1, 2, 3, 4, 5, 6]\n",
+            "[1, 2, 3, 4, 5, 6]\n",
+            "[1, 2, 3, 4, 5, 6]\n",
+            "[1, 2, 3, 4, 5, 6, 7]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
