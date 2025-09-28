@@ -234,11 +234,17 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .project:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3)
 }
 
 .project img {
